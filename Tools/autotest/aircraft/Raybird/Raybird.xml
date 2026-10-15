@@ -21,22 +21,22 @@
     <wingspan unit="FT"> 9.7113 </wingspan>
     <chord unit="FT"> 1.0269 </chord>
     <htailarea unit="FT2"> 1.1840 </htailarea>
-    <htailarm unit="FT"> 3.3112 </htailarm>
+    <htailarm unit="FT"> 3.2961 </htailarm>
     <vtailarea unit="FT2"> 1.1840 </vtailarea>
-    <vtailarm unit="FT"> 3.3112 </vtailarm>
-    <location name="AERORP" unit="IN"> <x> 23.938 </x> <y> -0.000 </y> <z> -0.447 </z> </location>
+    <vtailarm unit="FT"> 3.2961 </vtailarm>
+    <location name="AERORP" unit="IN"> <x> 24.119 </x> <y> -0.000 </y> <z> -0.447 </z> </location>
     <location name="EYEPOINT" unit="IN"> <x> 13.780 </x> <y> 0.000 </y> <z> 3.937 </z> </location>
-    <location name="VRP" unit="IN"> <x> 23.938 </x> <y> -0.000 </y> <z> -0.447 </z> </location>
+    <location name="VRP" unit="IN"> <x> 24.119 </x> <y> -0.000 </y> <z> -0.447 </z> </location>
   </metrics>
 
   <mass_balance>
     <ixx unit="SLUG*FT2"> 1.18995 </ixx>
-    <iyy unit="SLUG*FT2"> 1.43913 </iyy>
-    <izz unit="SLUG*FT2"> 2.56395 </izz>
+    <iyy unit="SLUG*FT2"> 1.43403 </iyy>
+    <izz unit="SLUG*FT2"> 2.55885 </izz>
     <!-- JSBSim's default convention takes the negated product of inertia. -->
-    <ixz unit="SLUG*FT2"> 0.06762 </ixz>
+    <ixz unit="SLUG*FT2"> 0.06376 </ixz>
     <emptywt unit="LBS"> 24.383 </emptywt>
-    <location name="CG" unit="IN"> <x> 26.159 </x> <y> -0.000 </y> <z> 0.459 </z> </location>
+    <location name="CG" unit="IN"> <x> 26.389 </x> <y> -0.000 </y> <z> 0.459 </z> </location>
     <pointmass name="payload">
       <weight unit="LBS"> 6.614 </weight>
       <location unit="IN"> <x> 15.748 </x> <y> 0.000 </y> <z> -5.118 </z> </location>
@@ -56,7 +56,7 @@
       <retractable> 0 </retractable>
     </contact>
     <contact type="BOGEY" name="left_launch_gear">
-      <location unit="IN"> <x> 27.875 </x> <y> -13.780 </y> <z> -23.622 </z> </location>
+      <location unit="IN"> <x> 28.056 </x> <y> -13.780 </y> <z> -23.622 </z> </location>
       <static_friction> 0.8 </static_friction>
       <dynamic_friction> 0.5 </dynamic_friction>
       <rolling_friction> 0.05 </rolling_friction>
@@ -67,7 +67,7 @@
       <retractable> 0 </retractable>
     </contact>
     <contact type="BOGEY" name="right_launch_gear">
-      <location unit="IN"> <x> 27.875 </x> <y> 13.780 </y> <z> -23.622 </z> </location>
+      <location unit="IN"> <x> 28.056 </x> <y> 13.780 </y> <z> -23.622 </z> </location>
       <static_friction> 0.8 </static_friction>
       <dynamic_friction> 0.5 </dynamic_friction>
       <rolling_friction> 0.05 </rolling_friction>
@@ -111,7 +111,7 @@
       <retractable> 0 </retractable>
     </contact>
     <contact type="STRUCTURE" name="left_wingtip">
-      <location unit="IN"> <x> 23.872 </x> <y> -58.268 </y> <z> 7.636 </z> </location>
+      <location unit="IN"> <x> 24.893 </x> <y> -58.268 </y> <z> 7.636 </z> </location>
       <static_friction> 0.8 </static_friction>
       <dynamic_friction> 0.5 </dynamic_friction>
       <rolling_friction> 0.05 </rolling_friction>
@@ -122,7 +122,7 @@
       <retractable> 0 </retractable>
     </contact>
     <contact type="STRUCTURE" name="right_wingtip">
-      <location unit="IN"> <x> 23.872 </x> <y> 58.268 </y> <z> 7.636 </z> </location>
+      <location unit="IN"> <x> 24.893 </x> <y> 58.268 </y> <z> 7.636 </z> </location>
       <static_friction> 0.8 </static_friction>
       <dynamic_friction> 0.5 </dynamic_friction>
       <rolling_friction> 0.05 </rolling_friction>
@@ -169,7 +169,7 @@
       </thruster>
     </engine>
     <tank type="FUEL">
-      <location unit="IN"> <x> 23.938 </x> <y> 0.000 </y> <z> 0.000 </z> </location>
+      <location unit="IN"> <x> 24.119 </x> <y> 0.000 </y> <z> 0.000 </z> </location>
       <capacity unit="LBS"> 19.709 </capacity>
       <contents unit="LBS"> 19.709 </contents>
     </tank>
@@ -326,7 +326,7 @@
           <property>metrics/Sw-sqft</property>
           <property>aero/beta-rad</property>
           <property>aero/beta-rad</property>
-          <value>0.056934</value>
+          <value>0.056520</value>
         </product>
       </function>
       <function name="aero/coefficient/CD_de2">
@@ -336,7 +336,7 @@
           <property>metrics/Sw-sqft</property>
           <property>fcs/elevator-pos-rad</property>
           <property>fcs/elevator-pos-rad</property>
-          <value>0.093264</value>
+          <value>0.092849</value>
         </product>
       </function>
     </axis>
@@ -347,7 +347,7 @@
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>aero/beta-rad</property>
-          <value>-0.549373</value>
+          <value>-0.547771</value>
         </product>
       </function>
       <function name="aero/coefficient/CY_p">
@@ -357,7 +357,7 @@
           <property>metrics/Sw-sqft</property>
           <property>aero/bi2vel</property>
           <property>velocities/p-aero-rad_sec</property>
-          <value>-0.126277</value>
+          <value>-0.127649</value>
         </product>
       </function>
       <function name="aero/coefficient/CY_r">
@@ -367,7 +367,7 @@
           <property>metrics/Sw-sqft</property>
           <property>aero/bi2vel</property>
           <property>velocities/r-aero-rad_sec</property>
-          <value>0.379156</value>
+          <value>0.378534</value>
         </product>
       </function>
       <function name="aero/coefficient/CY_da">
@@ -376,7 +376,7 @@
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>fcs/left-aileron-pos-rad</property>
-          <value>0.141576</value>
+          <value>0.141509</value>
         </product>
       </function>
       <function name="aero/coefficient/CY_dr">
@@ -385,7 +385,7 @@
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>fcs/rudder-pos-rad</property>
-          <value>0.667693</value>
+          <value>0.667311</value>
         </product>
       </function>
     </axis>
@@ -402,43 +402,43 @@
               -1.04720  -0.95263
               -0.78540  -1.10000
               -0.52360  -0.95263
-              -0.27925  -0.68760
-              -0.26180  -0.71020
-              -0.24435  -0.68842
-              -0.22689  -0.64525
-              -0.20944  -0.57623
-              -0.19199  -0.48919
-              -0.17453  -0.39620
-              -0.15708  -0.30280
-              -0.13963  -0.20903
-              -0.12217  -0.11372
-              -0.10472  -0.01768
-              -0.08727   0.07803
-              -0.06981   0.17583
-              -0.05236   0.27371
-              -0.03491   0.37121
-              -0.01745   0.46806
-               0.00000   0.56295
-               0.01745   0.65885
-               0.03491   0.75618
-               0.05236   0.85370
-               0.06981   0.95005
-               0.08727   1.04428
-               0.10472   1.13585
-               0.12217   1.22401
-               0.13963   1.30771
-               0.15708   1.38570
-               0.17453   1.45638
-               0.19199   1.51803
-               0.20944   1.56956
-               0.22689   1.61086
-               0.24435   1.64215
-               0.26180   1.66281
-               0.27925   1.67005
-               0.29671   1.65823
-               0.31416   1.62119
-               0.33161   1.55800
-               0.34907   1.47435
+              -0.27925  -0.68397
+              -0.26180  -0.70657
+              -0.24435  -0.68479
+              -0.22689  -0.64162
+              -0.20944  -0.57260
+              -0.19199  -0.48556
+              -0.17453  -0.39258
+              -0.15708  -0.30071
+              -0.13963  -0.20847
+              -0.12217  -0.11469
+              -0.10472  -0.02018
+              -0.08727   0.07399
+              -0.06981   0.17027
+              -0.05236   0.26661
+              -0.03491   0.36258
+              -0.01745   0.45789
+               0.00000   0.55125
+               0.01745   0.64562
+               0.03491   0.74142
+               0.05236   0.83740
+               0.06981   0.93222
+               0.08727   1.02492
+               0.10472   1.11495
+               0.12217   1.20158
+               0.13963   1.28375
+               0.15708   1.36021
+               0.17453   1.42935
+               0.19199   1.48947
+               0.20944   1.53947
+               0.22689   1.57923
+               0.24435   1.60899
+               0.26180   1.62964
+               0.27925   1.63688
+               0.29671   1.62506
+               0.31416   1.58803
+               0.33161   1.52484
+               0.34907   1.44119
                0.52360   0.95263
                0.78540   1.10000
                1.04720   0.95263
@@ -454,7 +454,7 @@
           <property>metrics/Sw-sqft</property>
           <property>aero/ci2vel</property>
           <property>velocities/q-aero-rad_sec</property>
-          <value>0.340512</value>
+          <value>1.000804</value>
         </product>
       </function>
       <function name="aero/coefficient/CL_de">
@@ -463,7 +463,7 @@
           <property>aero/qbar-psf</property>
           <property>metrics/Sw-sqft</property>
           <property>fcs/elevator-pos-rad</property>
-          <value>0.667611</value>
+          <value>0.667202</value>
         </product>
       </function>
     </axis>
@@ -475,7 +475,7 @@
           <property>metrics/Sw-sqft</property>
           <property>metrics/bw-ft</property>
           <property>aero/beta-rad</property>
-          <value>-0.054019</value>
+          <value>-0.054610</value>
         </product>
       </function>
       <function name="aero/coefficient/Cl_p">
@@ -486,7 +486,7 @@
           <property>metrics/bw-ft</property>
           <property>aero/bi2vel</property>
           <property>velocities/p-aero-rad_sec</property>
-          <value>-0.678202</value>
+          <value>-0.680304</value>
         </product>
       </function>
       <function name="aero/coefficient/Cl_r">
@@ -497,7 +497,7 @@
           <property>metrics/bw-ft</property>
           <property>aero/bi2vel</property>
           <property>velocities/r-aero-rad_sec</property>
-          <value>0.108044</value>
+          <value>0.111376</value>
         </product>
       </function>
       <function name="aero/coefficient/Cl_da">
@@ -507,7 +507,7 @@
           <property>metrics/Sw-sqft</property>
           <property>metrics/bw-ft</property>
           <property>fcs/left-aileron-pos-rad</property>
-          <value>0.579490</value>
+          <value>0.579145</value>
         </product>
       </function>
       <function name="aero/coefficient/Cl_dr">
@@ -517,7 +517,7 @@
           <property>metrics/Sw-sqft</property>
           <property>metrics/bw-ft</property>
           <property>fcs/rudder-pos-rad</property>
-          <value>-0.074437</value>
+          <value>-0.074390</value>
         </product>
       </function>
     </axis>
@@ -531,51 +531,51 @@
           <table>
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
-              -1.57080   0.49685
-              -1.04720   0.42986
-              -0.78540   0.35040
-              -0.52360   0.24685
-              -0.27925   0.13466
-              -0.26180   0.09311
-              -0.24435   0.06958
-              -0.22689   0.05575
-              -0.20944   0.05261
-              -0.19199   0.05627
-              -0.17453   0.06131
-              -0.15708   0.06518
-              -0.13963   0.06745
-              -0.12217   0.06801
-              -0.10472   0.06656
-              -0.08727   0.06300
-              -0.06981   0.05803
-              -0.05236   0.05254
-              -0.03491   0.04666
-              -0.01745   0.03993
-               0.00000   0.03234
-               0.01745   0.02337
-               0.03491   0.01315
-               0.05236   0.00205
-               0.06981  -0.00987
-               0.08727  -0.02261
-               0.10472  -0.03584
-               0.12217  -0.04913
-               0.13963  -0.06233
-               0.15708  -0.07557
-               0.17453  -0.08893
-               0.19199  -0.10219
-               0.20944  -0.11540
-               0.22689  -0.12935
-               0.24435  -0.14531
-               0.26180  -0.16451
-               0.27925  -0.18784
-               0.29671  -0.21625
-               0.31416  -0.25082
-               0.33161  -0.29098
-               0.34907  -0.33331
-               0.52360  -0.41230
-               0.78540  -0.51585
-               1.04720  -0.59531
-               1.57080  -0.66230
+              -1.57080   0.50568
+              -1.04720   0.43869
+              -0.78540   0.35923
+              -0.52360   0.25568
+              -0.27925   0.14350
+              -0.26180   0.10383
+              -0.24435   0.07937
+              -0.22689   0.06327
+              -0.20944   0.05618
+              -0.19199   0.05471
+              -0.17453   0.05422
+              -0.15708   0.05853
+              -0.13963   0.06120
+              -0.12217   0.06205
+              -0.10472   0.06083
+              -0.08727   0.05750
+              -0.06981   0.05261
+              -0.05236   0.04718
+              -0.03491   0.04137
+              -0.01745   0.03477
+               0.00000   0.02744
+               0.01745   0.01867
+               0.03491   0.00857
+               0.05236  -0.00240
+               0.06981  -0.01407
+               0.08727  -0.02639
+               0.10472  -0.03898
+               0.12217  -0.05135
+               0.13963  -0.06332
+               0.15708  -0.07491
+               0.17453  -0.08608
+               0.19199  -0.09652
+               0.20944  -0.10622
+               0.22689  -0.11595
+               0.24435  -0.12702
+               0.26180  -0.14665
+               0.27925  -0.16957
+               0.29671  -0.19637
+               0.31416  -0.22780
+               0.33161  -0.26331
+               0.34907  -0.29994
+               0.52360  -0.37893
+               0.78540  -0.48248
+               1.04720  -0.56194
+               1.57080  -0.62893
             </tableData>
           </table>
         </product>
@@ -588,7 +588,7 @@
           <property>metrics/cbarw-ft</property>
           <property>aero/ci2vel</property>
           <property>velocities/q-aero-rad_sec</property>
-          <value>-10.338217</value>
+          <value>-9.969821</value>
         </product>
       </function>
       <function name="aero/coefficient/Cm_adot">
@@ -599,7 +599,7 @@
           <property>metrics/cbarw-ft</property>
           <property>aero/ci2vel</property>
           <property>aero/alphadot-rad_sec</property>
-          <value>-3.618376</value>
+          <value>-3.489437</value>
         </product>
       </function>
       <function name="aero/coefficient/Cm_de">
@@ -609,7 +609,7 @@
           <property>metrics/Sw-sqft</property>
           <property>metrics/cbarw-ft</property>
           <property>fcs/elevator-pos-rad</property>
-          <value>-2.127050</value>
+          <value>-2.115215</value>
         </product>
       </function>
     </axis>
@@ -621,7 +621,7 @@
           <property>metrics/Sw-sqft</property>
           <property>metrics/bw-ft</property>
           <property>aero/beta-rad</property>
-          <value>0.128575</value>
+          <value>0.127702</value>
         </product>
       </function>
       <function name="aero/coefficient/Cn_p">
@@ -632,7 +632,7 @@
           <property>metrics/bw-ft</property>
           <property>aero/bi2vel</property>
           <property>velocities/p-aero-rad_sec</property>
-          <value>-0.130092</value>
+          <value>-0.131212</value>
         </product>
       </function>
       <function name="aero/coefficient/Cn_r">
@@ -643,7 +643,7 @@
           <property>metrics/bw-ft</property>
           <property>aero/bi2vel</property>
           <property>velocities/r-aero-rad_sec</property>
-          <value>-0.113606</value>
+          <value>-0.112429</value>
         </product>
       </function>
       <function name="aero/coefficient/Cn_da">
@@ -653,7 +653,7 @@
           <property>metrics/Sw-sqft</property>
           <property>metrics/bw-ft</property>
           <property>fcs/left-aileron-pos-rad</property>
-          <value>0.010278</value>
+          <value>0.010496</value>
         </product>
       </function>
       <function name="aero/coefficient/Cn_dr">
@@ -663,7 +663,7 @@
           <property>metrics/Sw-sqft</property>
           <property>metrics/bw-ft</property>
           <property>fcs/rudder-pos-rad</property>
-          <value>-0.225967</value>
+          <value>-0.224883</value>
         </product>
       </function>
     </axis>
