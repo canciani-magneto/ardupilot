@@ -12,7 +12,7 @@
       - Assumed: drag allowance dCD0 = 0.01 for cooling, antennas, gaps and interference
       - Engine: JSBSim electric stand-in for shaft power; fuel accounting happens outside JSBSim
       - Launch gear is fictitious, for SITL runway takeoffs; the real aircraft uses a catapult and parachute
-      - Propeller: BEM stand-in; replace with measured data
+      - Propeller: CT and CP measured in the UIUC wind tunnel (apce_20x10, volume 4, runs at 2020-4506 rpm; highest rpm used at each J), continued past the windmill boundary with a BEM shape. Data: catalog/propellers/uiuc-v4-apce_20x10.json
     </note>
   </fileheader>
 
