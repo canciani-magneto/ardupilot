@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- Stand-in for the 3 kW placeholder: JSBSim's electric model delivers throttle x 3000 W of
+     shaft power at any rpm. Fuel and energy are accounted for outside JSBSim (plan §8.2). -->
+<electric_engine name="3 kW placeholder">
+  <power unit="WATTS"> 3000.0 </power>
+</electric_engine>
