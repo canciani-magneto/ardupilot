@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<!-- Stand-in for the OS GF40 stand-in: JSBSim's electric model delivers throttle x 2800 W of
+     shaft power at any rpm. Fuel and energy are accounted for outside JSBSim (plan §8.2). -->
+<electric_engine name="OS GF40 stand-in">
+  <power unit="WATTS"> 2800.0 </power>
+</electric_engine>
