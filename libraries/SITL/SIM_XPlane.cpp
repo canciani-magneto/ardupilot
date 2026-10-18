@@ -536,6 +536,10 @@ bool XPlane::receive_data(void)
 
     position = pos + position_zero;
     position.xy() += origin.get_distance_NE_double(home);
+    // Height from X-Plane's geodetic altitude, not its local (flat scene) y: the two drift apart by
+    // Earth curvature and scene tilt (~2 m within a few km), and the reset below then stepped the
+    // simulated altitude by 2 m at a time, which TECS saw as height steps during approaches.
+    position.z = -(loc.alt - home.alt) * 0.01;
     update_position();
     time_advance();
 
@@ -543,7 +547,7 @@ bool XPlane::receive_data(void)
     accel_earth.z += GRAVITY_MSS;
     
     // the position may slowly deviate due to float accuracy and longitude scaling
-    if (loc.get_distance(location) > 4 || abs(loc.alt - location.alt)*0.01f > 2.0f) {
+    if (loc.get_distance(location) > 4) {
         printf("X-Plane home reset dist=%f alt=%.1f/%.1f\n",
                loc.get_distance(location), loc.alt*0.01f, location.alt*0.01f);
         // reset home location
