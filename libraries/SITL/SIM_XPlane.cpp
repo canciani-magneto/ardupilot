@@ -98,7 +98,16 @@ XPlane::XPlane(const char *frame_str) :
     use_time_sync = false;
     const char *colon = strchr(frame_str, ':');
     if (colon) {
-        xplane_ip = colon+1;
+        // xplane:IP or xplane:IP:BINDPORT, for when X-Plane itself holds UDP 49001 (its send port)
+        char *ip = strdup(colon+1);
+        char *port = ip != nullptr ? strchr(ip, ':') : nullptr;
+        if (port != nullptr) {
+            *port = 0;
+            bind_port = atoi(port+1);
+        }
+        if (ip != nullptr && ip[0] != 0) {
+            xplane_ip = ip;
+        }
     }
 
     socket_in.bind("0.0.0.0", bind_port);
